@@ -1,52 +1,102 @@
-body {
-  background-color: #110000;
-}
-
-h1 {
-  display: block;
-  width: auto;
-  border-bottom: 3px solid #722;
-  text-align: center;
-}
-
-h1 p {
-  display: inline-block;
-  width: auto;
+* {
   margin: 0;
   padding: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: whitesmoke;
-  border-bottom: 3px solid #444;
-  margin-bottom: -3px;
-  padding: 3px 10px;
+  box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 860px;
+  background-color: #110000;
+  color: whitesmoke;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 3px solid #722;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0 auto 10px;
+  width: 80%;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 div#zoo {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  margin: 10px;
+}
+
+div h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 5px;
 }
 
 div.animal {
-  display: block;
   position: relative;
   width: 200px;
-  height: 250px;
+  height: 220px;
   margin: 5px;
   padding: 5px;
   border: 1px solid #444;
   border-radius: 5px;
   background-color: #333;
   text-align: center;
-  color: aliceblue;
   cursor: pointer;
+}
+
+div.animal:hover {
+  background-color: #444;
 }
 
 div.animal img {
   display: block;
   width: 120px;
   height: 120px;
-  margin: 0 auto;
+  margin: 15px auto;
+  border: 3px solid #722;
   border-radius: 50%;
+}
+
+.info {
+  border-top: 3px solid #722;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto 0;
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .1s ease-in;
+
+}
+footer a:hover {
+  /* color: #722; */
+  text-shadow:
+    -1px -1px 0 #722,
+    1px -1px 0 #722,
+    -1px 1px 0 #722,
+    1px 1px 0 #722;
 }
