@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 860px;
+  max-width: 900px;
   background-color: #110000;
   color: whitesmoke;
   margin: 0 auto;
