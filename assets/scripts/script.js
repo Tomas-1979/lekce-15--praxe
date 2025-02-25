@@ -86,10 +86,11 @@ class Animal {
     anim.appendChild(p);
 
     /**
-     * přidání img
+     * přidání img včetně alt=""
      */
     const img = document.createElement("img");
     img.src = this.img;
+    img.alt = `Jméno zvířete ${this.name}`;
     anim.appendChild(img);
 
     /**
@@ -138,29 +139,29 @@ const zvirata = [
     "Ben",
     4,
     7,
-    "./assets/img/small-dog.jpg",
-    "./assets/sound/small-dog-woof-woof-sound.mp3",
+    "./assets/img/dog.webp",
+    "./assets/sound/dog.mp3",
   ],
   ["Pig",
     "Tonda",
     4,
     1,
-    "./assets/img/pig.jpg",
+    "./assets/img/pig.webp",
     "./assets/sound/pig.mp3"],
   [
     "Duck",
     "Donald",
     2,
     3,
-    "./assets/img/duck-quack.jpg",
-    "./assets/sound/duck-quack.mp3",
+    "./assets/img/duck.webp",
+    "./assets/sound/duck.mp3",
   ],
   ["Fox",
     "Foxy",
     4,
     9,
-    "./assets/img/fox.jpg",
-    "./assets/sound/the_fox.mp3"],
+    "./assets/img/fox.webp",
+    "./assets/sound/fox.mp3"],
 ];
 
 const zoo = document.getElementById("zoo");
