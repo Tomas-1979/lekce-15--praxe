@@ -55,6 +55,7 @@ div h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 auto 5px;
+  padding-bottom: 3px;
   border-bottom: 2px solid #722;
 }
 /* nastavení záložky zvířete */
@@ -85,7 +86,7 @@ div.animal img {
   display: block;
   width: 120px;
   height: 120px;
-  margin: 15px auto;
+  margin: 10px auto;
   border: 1px solid #444;
   border-radius: 50%;
 }
